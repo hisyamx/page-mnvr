@@ -1,110 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuver</title>
-    <link rel="icon" href="/public/assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/public/app.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="manifest" href="/public/manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuver</title>
+  <link rel="icon" href="/public/assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/public/app.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <link rel="manifest" href="/public/manifest.json">
 </head>
+
 <body>
-    <div class="content">
-        <div class="con-user">
-            <div class="avatar">
-                <img src="/public/assets/avatar.png" alt="">
-            </div>
-            <div class="title">
-                <h1>Manuver Smanda</h1>
-                <h2>Rangkuman Informasi yang dikumpulkan secara kolektif mengenai Covid-19</h2>
-                <p>Kerjasama menambah informasi yang dapat membantu anda ketika terkena covid atau membantu anda terhindar dari terkena covid.</p>
-            </div>
-        </div>
-        <div class="con-menu">
-            <button onclick="handleClick(event, 'con-links')" class="active">
-                Links
-            </button>
-            <button onclick="handleClick(event, 'con-posts')">
-                Posts
-            </button>
-        </div>
-        <div class="con-contents">
-            <div class="con-links">
-                <a target="_blank" href="https://urundayacovid.com/">
-                    <span>
-                        Kumpulan Informasi Covid-19
-                    </span>
-                </a>
-                <a target="_blank" href="https://vaksincovid.carrd.co/">
-                    <span>
-                        Informasi Lokasi Vaksin
-                    </span>
-                </a>
-                <a target="_blank" href="https://oksigen.carrd.co/">
-                    <span>
-                        Informasi Tabung Oksigen
-                    </span>
-                </a>
-            </div>
-
-            <div class="con-posts">
-                <a class="post" target="_blank" href="https://www.instagram.com/p/CECec3CidsL/">
-                    <div class="con-file">
-                        <video autoplay loop src="/public/assets/chat.mp4"></video>
-                    </div>
-
-                    <footer>
-                        <h3>
-                            <i class='bx bxl-instagram-alt'></i>
-                            Instagram
-                        </h3>
-                        <p>
-                            Guide to become a frontend developer
-                        </p>
-                    </footer>
-
-                    <div class="effect"></div>
-                </a>
-                <a class="post" target="_blank" href="https://www.instagram.com/p/CECec3CidsL/">
-                    <div class="con-file">
-                        <video autoplay loop src="/public/assets/chat.mp4"></video>
-                    </div>
-
-                    <footer>
-                        <h3>
-                            <i class='bx bxl-instagram-alt'></i>
-                            Instagram
-                        </h3>
-                        <p>
-                            Guide to become a frontend developer
-                        </p>
-                    </footer>
-
-                    <div class="effect"></div>
-                </a>
-                <a class="post" target="_blank" href="https://www.instagram.com/p/CECec3CidsL/">
-                    <div class="con-file">
-                        <video autoplay loop src="/public/assets/chat.mp4"></video>
-                    </div>
-
-                    <footer>
-                        <h3>
-                            <i class='bx bxl-instagram-alt'></i>
-                            Instagram
-                        </h3>
-                        <p>
-                            Guide to become a frontend developer
-                        </p>
-                    </footer>
-
-                    <div class="effect"></div>
-                </a>
-            </div>
-        </div>
+  <div class="content">
+    <div class="con-user">
+      <div class="avatar">
+        <img src="/public/assets/avatar.png" alt="">
+      </div>
+      <div class="title">
+        <h1>Manuver Smanda</h1>
+        <h2>Rangkuman Informasi yang dikumpulkan secara kolektif mengenai Covid-19</h2>
+        <p>Kerjasama menambah informasi yang dapat membantu anda ketika terkena covid atau membantu anda terhindar dari
+          terkena covid.</p>
+      </div>
     </div>
+    <div class="con-menu">
+      <button onclick="handleClick(event, 'con-post')" class="active">
+        Informasi Covid-19 Umum
+      </button>
+      <button onclick="handleClick(event, 'con-posts')">
+        Informasi Covid-19 Kendal
+      </button>
+    </div>
+    <div class="con-contents">
+
+      <div class="con-post">
+        <div class="con-links">
+          <a target="_blank" href="https://urundayacovid.com/">
+            <span>
+              Kumpulan Informasi Covid-19
+            </span>
+          </a>
+          <a target="_blank" href="https://vaksincovid.carrd.co/">
+            <span>
+              Informasi Lokasi Vaksin
+            </span>
+          </a>
+          <a target="_blank" href="https://oksigen.carrd.co/">
+            <span>
+              Informasi Tabung Oksigen
+            </span>
+          </a>
+          <a target="_blank" href="https://linktr.ee/donorplasma">
+            <span>
+              Grup Donor Plasma
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="con-posts">
+        <div class="con-links">
+          <a target="_blank" href="https://corona.kendalkab.go.id/">
+            <span>
+              Informasi Covid-19 Kendal 
+            </span>
+          </a>
+          <a target="_blank" href="http://vaksinasi.kendalkab.go.id/dashboard">
+            <span>
+              Informasi Vaksin Kendal
+            </span>
+          </a>
+          <a target="_blank" href="https://yankes.kemkes.go.id/app/siranap/rumah_sakit?jenis=1&propinsi=33prop&kabkota=3324">
+            <span>
+              Ketersediaan Bed Kendal
+            </span>
+          </a>
+          <a target="_blank" href="tel:08112601119">
+            <span>
+              Hotline Posko Covid Kendal
+            </span>
+          </a>
+          <a target="_blank" href="https://urundayacovid.com/rumahsakit">
+            <span>
+              Hotline Rumah Sakit
+            </span>
+          </a>
+          <a target="_blank" href="tel:02476442888">
+            <span>
+              Hotline 1 Posko Covid Jawa Tengah
+            </span>
+          </a>
+          <a target="_blank" href="tel:08112622000">
+            <span>
+              Hotline 2 Posko Covid Jawa Tengah
+            </span>
+          </a>
+          <!-- <a class="post" target="_blank" href="https://www.instagram.com/p/CECec3CidsL/">
+            <div class="con-file">
+                <video autoplay loop src="/public/assets/chat.mp4"></video>
+            </div>
+            <footer>
+                <h3>
+                    <i class='bx bxl-instagram-alt'></i>
+                    Instagram
+                </h3>
+                <p>
+                    Guide to become a frontend developer
+                </p>
+            </footer>
+            <div class="effect"></div>
+        </a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
-    <script src="/public/app.js"></script>
+<script src="/public/app.js"></script>
+
 </html>
