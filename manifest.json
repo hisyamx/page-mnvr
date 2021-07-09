@@ -1,0 +1,11 @@
+{
+    "name": "Links Hisyamk",
+    "short_name": "Hisyamk - instagram - github - twitter",
+    "description": "Links Hisyamk",
+    "theme_color": "#000000",
+    "background_color": "grey",
+    "display": "standalone",
+    "Scope": "./",
+    "start_url": "index.html",
+    "splash_pages": true
+  }

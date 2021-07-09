@@ -1,0 +1,11 @@
+{
+    "name": "Manuver",
+    "short_name": "Manuver",
+    "description": "Manuver",
+    "theme_color": "#000000",
+    "background_color": "grey",
+    "display": "standalone",
+    "Scope": "./",
+    "start_url": "index.html",
+    "splash_pages": true
+  }
