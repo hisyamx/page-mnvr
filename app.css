@@ -12,10 +12,83 @@ body {
   color: rgb(var(--color));
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url("/assets/cover.jpg");
+  background-image: url("/assets/cover.svg");
   background-repeat: none;
   background-size: cover;
 }
+
+@media screen and (max-width:700px) {
+  body {
+    background-image: url('/assets/covermobile.svg');
+    background-repeat: none;
+    background-size: cover;
+  }
+  .con-user .title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .con-user .title h1 {
+    font-size: 1rem;
+    color: rgb(var(--black));
+    padding: 0px 0px;
+  }
+
+  .con-user .title h2 {
+    font-size: 0.7rem;
+    color: rgb(var(--black));
+    padding: 0px 0px;
+  }
+
+  .con-user .title p {
+    font-size: 0.4rem;
+    padding: 5px 7px;
+    color: rgb(var(--black));
+  }
+
+  .con-links a i {
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+  }
+
+  .con-links a span {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .con-links a span p {
+    font-size: 0.4rem;
+  }
+
+  .con-user {
+    padding: 0px 5px;
+    max-width: 400px;
+  }
+
+  .con-menu {
+    max-width: 100%;
+  }
+
+  .con-contents {
+    max-width: 400px;
+  }
+
+  .con-post {
+    max-width: 400px;
+  }
+
+  .con-posts {
+    max-width: 400px;
+  }
+
+  .con-links {
+    max-width: 400px;
+  }
+
+}
+
 * {
   list-style: none;
   outline: none;
@@ -36,7 +109,7 @@ body {
 }
 
 .con-user {
-  padding-top: 5px;
+  padding: 5px 0px;
   width: 500px;
   position: relative;
   display: flex;
@@ -45,7 +118,6 @@ body {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.5);
   /* background: #F9FCFF; */
-  padding-bottom: 5px;
   /* border-radius: 0px 0px 30px 30px; */
 }
 
@@ -348,5 +420,5 @@ body {
 }
 
 .con-links a span p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
