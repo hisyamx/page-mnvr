@@ -12,7 +12,7 @@ body {
   color: rgb(var(--color));
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url("/public/assets/cover.jpg");
+  background-image: url("/assets/cover.jpg");
   background-repeat: none;
   background-size: cover;
 }
@@ -125,7 +125,6 @@ body {
 .con-contents {
   width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -293,6 +292,7 @@ body {
   scroll-snap-align: center;
   flex: 1;
   overflow: auto;
+  overflow-y: hidden;
   padding-top: 20px;
 }
 
