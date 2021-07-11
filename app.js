@@ -2,8 +2,8 @@
     const menu = document.querySelector('.con-menu')
     const contents = document.querySelector('.con-contents')
     const links = document.querySelector('.con-contents .con-links')
-    const post = document.querySelector('.con-contents .con-post')
     const posts = document.querySelector('.con-contents .con-posts')
+    const post = document.querySelector('.con-contents .con-post')
     window.addEventListener("load", function(event) {
         const vh = window.innerHeight * 0.01
         document.documentElement.style.setProperty('--vh', `${vh}px`)
