@@ -7,11 +7,9 @@ body {
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  /* background: rgba(255, 255, 255, 0.7); */
   height: calc(var(--vh, 1vh) * 100);
   color: rgb(var(--color));
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-y: auto;
   background-image: url("/assets/cover.svg");
   background-repeat: none;
   background-size: cover;
@@ -29,7 +27,7 @@ body {
   }
 
   .con-user .title h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: rgb(var(--black));
     padding: 0px 0px;
   }
@@ -46,16 +44,20 @@ body {
     color: rgb(var(--black));
   }
 
+  .con-links a {
+    padding: 15px 50px;
+  }
+
   .con-links a i {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 400;
     position: absolute;
     left: 20px;
   }
 
   .con-links a span {
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .con-links a span p {
@@ -67,17 +69,10 @@ body {
     max-width: 400px;
   }
 
-  .con-menu {
-    max-width: 100%;
-  }
-
   .con-contents {
     max-width: 400px;
   }
 
-  .con-post {
-    max-width: 400px;
-  }
 
   .con-posts {
     max-width: 400px;
@@ -117,8 +112,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.5);
-  /* background: #F9FCFF; */
-  /* border-radius: 0px 0px 30px 30px; */
+  border-radius: 0px 0px 30px 30px;
 }
 
 .con-user .title {
@@ -154,60 +148,6 @@ body {
   border-radius: 30px;
 }
 
-.con-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  max-width: 500px;
-  margin: auto;
-  width: 100%;
-  position: relative;
-  z-index: 10;
-  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, .08);
-  border-radius: 0px 0px 20px 20px;
-  background: rgba(255, 255, 255, 0.5);
-    /* border-radius: 0px 0px 30px 30px; */
-}
-
-.con-menu button {
-  padding: 12px;
-  width: calc(50% - 4px);
-  border: 0px;
-  background: transparent;
-  font-weight: bold;
-  color: rgb(var(--white));
-  font-size: 1rem;
-  transition: all .25s ease;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08);
-  border-radius: 16px;
-  z-index: 2;
-}
-
-.con-menu button:hover {
-  color: rgb(var(--primary));
-}
-
-.con-menu button.active {
-  background: #fff;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, .06);
-  color: rgb(var(--black));
-}
-
-.con-contents {
-  width: 100%;
-  overflow-x: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  flex: 1;
-  height: 100%;
-  position: relative;
-  max-width: 500px;
-}
-
 .con-posts {
   min-width: 100%;
   scroll-snap-align: center;
@@ -218,7 +158,7 @@ body {
 
 .con-posts .post {
   width: calc(100% - 40px);
-  overflow: hidden;
+  overflow-y: auto;
   box-sizing: border-box;
   display: block;
   margin: 20px;
@@ -279,83 +219,19 @@ body {
 
 }
 
-.con-post {
-  min-width: 100%;
-  scroll-snap-align: center;
-  overflow: auto;
-  padding-bottom: 30px;
-  max-width: 500px;
-}
-
-.con-post .post {
-  width: calc(100% - 40px);
-  overflow: hidden;
-  box-sizing: border-box;
-  display: block;
-  margin: 20px;
-  position: relative;
-  color: rgb(var(--text));
-  border-radius: 30px;
-  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, .08);
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .con-file {
   width: 100%;
   padding-bottom: 100%;
   height: 0;
 }
 
-.con-post .post img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translate(0, -50%);
-}
-
-.con-post .post video {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translate(0, -50%);
-}
-
-.con-post .post footer {
-  position: absolute;
-  bottom: 0px;
-  z-index: 10;
-  padding: 10px 20px;
-}
-
-.con-post .post footer h3 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.con-post .post footer h3 i {
-  margin-right: 5px;
-  font-size: 1.4rem;
-}
-
-.con-post .post .effect {
-  position: absolute;
-  bottom: 0px;
-  height: 150px;
-  width: 100%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 0.001) 100%);
-
-}
 
 .con-links {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 15px 20px;
+  padding: 15px 0px;
   padding-top: 0px;
   max-width: 500px;
   width: 100%;
@@ -364,14 +240,14 @@ body {
   scroll-snap-align: center;
   flex: 1;
   overflow: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   padding-top: 20px;
 }
 
 .con-links a {
   display: block;
   width: 100%;
-  padding: 18px 22px;
+  padding: 15px 80px;
   text-decoration: none;
   font-size: 1rem;
   color: rgb(var(--black));
@@ -379,11 +255,11 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 1);
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   border-radius: 15px;
   position: relative;
   box-shadow: 0px 10px 30px 0px rgba(var(--black), .15);
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .con-links a:hover {
@@ -408,15 +284,15 @@ body {
 }
 
 .con-links a i {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
   position: absolute;
   left: 20px;
 }
 
 .con-links a span {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .con-links a span p {
